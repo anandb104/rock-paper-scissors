@@ -21,51 +21,51 @@ const div4=document.querySelector(".bhu");
 
 
 let input;
-function playGame(){
-rock.addEventListener("click",()=>{
-    let x=Math.random()
-    input="Rock";
-    div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
-    playRound(getHumanChoice(),getComputerChoice(x));
-    if(humanScore==5) {
-        div4.textContent+="Congrats you are a Winner :) ";   
-        disableButtons();
-        }
-        else if(computerScore==5){
-               div4.textContent+="Ha ha you are a loser :(";
-               disableButtons();
-        }
+// function playGame(){
+// rock.addEventListener("click",()=>{
+//     let x=Math.random()
+//     input="Rock";
+//     div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
+//     playRound(getHumanChoice(),getComputerChoice(x));
+//     if(humanScore==5) {
+//         div4.textContent+="Congrats you are a Winner :) ";   
+//         disableButtons();
+//         }
+//         else if(computerScore==5){
+//                div4.textContent+="Ha ha you are a loser :(";
+//                disableButtons();
+//         }
         
-});
-paper.addEventListener("click",()=>{
-    let x=Math.random()
-    input="Paper";
-    div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
-    playRound(getHumanChoice(),getComputerChoice(x));
-    if(humanScore==5) {
-        div4.textContent+="Congrats you are a Winner :)";   
-        disableButtons();
-        }
-        else if(computerScore==5){
-               div4.textContent+="Ha ha you are a loser :(";
-               disableButtons();
-        }
-});
-scissor.addEventListener("click",()=>{
-    let x=Math.random()
-    input="Scissor";
-    div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
-    playRound(getHumanChoice(),getComputerChoice(x));
-    if(humanScore==5) {
-        div4.textContent+="Congrats you are a Winner :)";   
-        disableButtons();
-        }
-        else if(computerScore==5){
-               div4.textContent+="Ha ha you are a loser :(";
-               disableButtons();
-        }
-});
-}
+// });
+// paper.addEventListener("click",()=>{
+//     let x=Math.random()
+//     input="Paper";
+//     div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
+//     playRound(getHumanChoice(),getComputerChoice(x));
+//     if(humanScore==5) {
+//         div4.textContent+="Congrats you are a Winner :)";   
+//         disableButtons();
+//         }
+//         else if(computerScore==5){
+//                div4.textContent+="Ha ha you are a loser :(";
+//                disableButtons();
+//         }
+// });
+// scissor.addEventListener("click",()=>{
+//     let x=Math.random()
+//     input="Scissor";
+//     div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
+//     playRound(getHumanChoice(),getComputerChoice(x));
+//     if(humanScore==5) {
+//         div4.textContent+="Congrats you are a Winner :)";   
+//         disableButtons();
+//         }
+//         else if(computerScore==5){
+//                div4.textContent+="Ha ha you are a loser :(";
+//                disableButtons();
+//         }
+// });
+// }
 function getHumanChoice(){
 return input;
 }
@@ -143,4 +143,49 @@ function disableButtons() {
     paper.disabled = true;
     scissor.disabled = true;
 }
+function playGame(){
+    rock.addEventListener("click",()=>{
+        let x=Math.random()
+        input="Rock";
+        div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
+        playRound(getHumanChoice(),getComputerChoice(x));
+        if(humanScore==5) {
+            div4.textContent+="Congrats you are a Winner :) ";   
+            disableButtons();
+            }
+            else if(computerScore==5){
+                   div4.textContent+="Ha ha you are a loser :(";
+                   disableButtons();
+            }
+            
+    });
+    paper.addEventListener("click",()=>{
+        let x=Math.random()
+        input="Paper";
+        div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
+        playRound(getHumanChoice(),getComputerChoice(x));
+        if(humanScore==5) {
+            div4.textContent+="Congrats you are a Winner :)";   
+            disableButtons();
+            }
+            else if(computerScore==5){
+                   div4.textContent+="Ha ha you are a loser :(";
+                   disableButtons();
+            }
+    });
+    scissor.addEventListener("click",()=>{
+        let x=Math.random()
+        input="Scissor";
+        div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
+        playRound(getHumanChoice(),getComputerChoice(x));
+        if(humanScore==5) {
+            div4.textContent+="Congrats you are a Winner :)";   
+            disableButtons();
+            }
+            else if(computerScore==5){
+                   div4.textContent+="Ha ha you are a loser :(";
+                   disableButtons();
+            }
+    });
+    }
   playGame();

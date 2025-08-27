@@ -1,0 +1,96 @@
+body {
+    background-image: url('./images/bgi.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  button{
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    height:210px;
+  }
+  .human{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .options{
+    display:flex;
+  }
+ .choice{
+    width:300px;
+    height:200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .compchoice{
+    font-size: large;
+    color:antiquewhite
+ }
+ .chu{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:50vh;
+ }
+ .score{
+    background-color:white;
+    width:300px;
+    height:100px;
+    display:flex;
+
+ }
+ .com{
+    background-color: violet;
+    color: white;
+    height:100px;
+    width:150px;
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    align-items:center;
+ }
+ /* .humscore{
+    background-color: black;
+    color: white;
+    height:40px;
+ } */
+ .baap{
+    display:flex;
+    justify-content: center;
+ }
+ .in{
+    background-color: red;
+    color: white;
+    height:100px;
+    width:150px;
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center;why is it not coming in center */
+    align-items:center;
+ }
+.lu{
+    display:flex;
+    justify-content: center;
+    font-size:50px;
+}
+.bhu{
+    background-color: blue;
+    width:300px;
+    height:200px;
+    color:pink;
+    font-size:large;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.shoe{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

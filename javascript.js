@@ -96,7 +96,12 @@ function disableButtons() {
                 div1.innerHTML = `<img class='lh'src='./images/${computerSelection}.png'>`;
             }
         playRound(humanSelection,computerSelection);
-        if(humanScore>=5) {
+        if(humanScore==5 && computerScore ==5 ){
+            div4.textContent="The Match has drawn!!";   
+            disableButtons();
+            div5.appendChild(button1);
+        }
+        else if(humanScore>=5) {
             div4.textContent="Congrats you are the Winner :).Want to Play Again? ";   
             disableButtons();
             div5.appendChild(button1);
@@ -120,7 +125,12 @@ function disableButtons() {
             div1.innerHTML = `<img class='lh'src='./images/${computerSelection}.png'>`;
         }
         playRound(humanSelection,computerSelection);
-        if(humanScore>=5) {
+        if(humanScore==5 && computerScore ==5 ){
+            div4.textContent="The Match has drawn!!";   
+            disableButtons();
+            div5.appendChild(button1);
+        }
+        else if(humanScore>=5) {
             div4.textContent="Congrats you are the Winner :).Want to Play Again?";   
             disableButtons();
             div5.appendChild(button1);
@@ -144,7 +154,12 @@ function disableButtons() {
                 div1.innerHTML = `<img class='lh'src='./images/${computerSelection}.png'>`;
             }
         playRound(humanSelection,computerSelection);
-        if(humanScore>=5) {
+        if(humanScore==5 && computerScore ==5 ){
+            div4.textContent="The Match has drawn!!";   
+            disableButtons();
+            div5.appendChild(button1);
+        }
+        else if(humanScore>=5) {
             div4.textContent="Congrats you are the Winner :).Want to Play Again?";   
             disableButtons();
             div5.appendChild(button1);

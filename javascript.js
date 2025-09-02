@@ -2,7 +2,7 @@
 function getComputerChoice(number)
 {
 if(number<=0.33)return "rock";
-else if(number > 0.33 && number <= 0.66)return "scissor";
+else if(number > 0.33 && number <= 0.66)return "scissor";//test
 else return "paper";
 }
 

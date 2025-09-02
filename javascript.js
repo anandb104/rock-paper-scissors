@@ -1,5 +1,3 @@
-// let x=Math.random();
-// console.log(x);
 
 function getComputerChoice(number)
 {
@@ -8,7 +6,7 @@ else if(number > 0.33 && number <= 0.66)return "Scissor";
 else return "paper";
 }
 
-// console.log(getComputerChoice(x));
+
 const img1=document.querySelector(".r-images");
 const img2=document.querySelector(".question");
 
@@ -28,70 +26,22 @@ button1.textContent="Play Again?"
 button1.addEventListener("click",()=>location.reload());
 const div5=document.querySelector(".playagain");
 
-
-// let input;
-// function playGame(){
-// rock.addEventListener("click",()=>{
-//     let x=Math.random()
-//     input="Rock";
-//     div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
-//     playRound(getHumanChoice(),getComputerChoice(x));
-//     if(humanScore==5) {
-//         div4.textContent+="Congrats you are a Winner :) ";   
-//         disableButtons();
-//         }
-//         else if(computerScore==5){
-//                div4.textContent+="Ha ha you are a loser :(";
-//                disableButtons();
-//         }
-        
-// });
-// paper.addEventListener("click",()=>{
-//     let x=Math.random()
-//     input="Paper";
-//     div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
-//     playRound(getHumanChoice(),getComputerChoice(x));
-//     if(humanScore==5) {
-//         div4.textContent+="Congrats you are a Winner :)";   
-//         disableButtons();
-//         }
-//         else if(computerScore==5){
-//                div4.textContent+="Ha ha you are a loser :(";
-//                disableButtons();
-//         }
-// });
-// scissor.addEventListener("click",()=>{
-//     let x=Math.random()
-//     input="Scissor";
-//     div1.textContent=`Computer's choice is:${getComputerChoice(x)}`;
-//     playRound(getHumanChoice(),getComputerChoice(x));
-//     if(humanScore==5) {
-//         div4.textContent+="Congrats you are a Winner :)";   
-//         disableButtons();
-//         }
-//         else if(computerScore==5){
-//                div4.textContent+="Ha ha you are a loser :(";
-//                disableButtons();
-//         }
-// });
-// }
 function getHumanChoice(input){
 return input;
 }
 
 
-let humanScore=0;//global variable
+let humanScore=0;
 let computerScore=0;
 function playRound(humanChoice, computerChoice) {
-    if(humanChoice.toUpperCase()===computerChoice.toUpperCase()){  //switch statement
+    if(humanChoice.toUpperCase()===computerChoice.toUpperCase()){ 
        humanScore+=0.5;
        computerScore+=0.5;
-    //    console.log(`Your score=${humanScore} and computer score=${computerScore}.`);//string cocatenation
     div2.textContent=`${computerScore}`;
     div3.textContent=`${humanScore}`;
     div4.textContent="Draw!!Both of you chose the same option!!";
 }
-else if(humanChoice.toUpperCase()=="ROCK" && computerChoice.toUpperCase()=="PAPER"){//error when rock and paper
+else if(humanChoice.toUpperCase()=="ROCK" && computerChoice.toUpperCase()=="PAPER"){
     computerScore+=1;
     div2.textContent=`${computerScore}`;
     div3.textContent=`${humanScore}`;
@@ -128,25 +78,6 @@ else if(humanChoice.toUpperCase()=="SCISSOR" && computerChoice.toUpperCase()=="R
     div4.textContent="You lose! Rock beats Scissor";
 }
  }
-
-//   let humanSelection = getHumanChoice();
-//   let computerSelection = getComputerChoice(x);
-//   console.log(playRound(humanSelection,computerSelection));
- 
-// function playGame(){
-//     let i;
-//     for(i=0;i<5;i++){
-//         let x=Math.random();
-//         let humanSelection = getHumanChoice();
-//         console.log(humanSelection);
-//         let computerSelection = getComputerChoice(x);
-//         console.log(computerSelection);
-//        playRound(humanSelection,computerSelection);
-//     }
-//     if(humanScore>computerScore) return "Winner";
-//     else if(computerScore>humanScore) return "loser";
-//     else return "draw";
-// }
 function disableButtons() {
     rock.disabled = true;
     paper.disabled = true;
@@ -157,9 +88,7 @@ function disableButtons() {
         input="Rock";
         let x=Math.random();
         let computerSelection = getComputerChoice(x);
-        console.log(x);
         let humanSelection = getHumanChoice(input);
-        console.log(input);
         img1.innerHTML = "<img class='lh'src='./images/rocker.png'>";
         if(computerSelection=="rock")
             div1.innerHTML = `<img class='lh'src='./images/${computerSelection}er.png'>`;
@@ -183,9 +112,7 @@ function disableButtons() {
         input="Paper";
         let x=Math.random();
         let computerSelection = getComputerChoice(x);
-        console.log(x);
         let humanSelection = getHumanChoice(input);
-        console.log(input);
         img1.innerHTML = "<img class='lh'src='./images/paper.png'>"
         if(computerSelection=="rock")
         div1.innerHTML = `<img class='lh'src='./images/${computerSelection}er.png'>`;
@@ -209,9 +136,7 @@ function disableButtons() {
         input="Scissor";
         let x=Math.random();
         let computerSelection = getComputerChoice(x);
-        console.log(x);
         let humanSelection = getHumanChoice(input);
-        console.log(input);
         img1.innerHTML = "<img class='lh'src='./images/scissor.png'>"
         if(computerSelection=="rock")
             div1.innerHTML = `<img class='lh'src='./images/${computerSelection}er.png'>`;

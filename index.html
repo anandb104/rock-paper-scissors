@@ -8,36 +8,44 @@
     <script src="./javascript.js" defer></script>
 </head>
 <body>
-    <div class="lu">Play a game of Rock Paper Scissors!!</div>
-    <div class="chu">
-    <div class="human">
-      <div class="pagal"> Choose your Option</div> 
-      <div class="options">
-    <button id="one"><img src="images/rocker.png">Rock</button>
-    <button id="two"><img src="images/paper.png">Paper</button>
-    <button id="three"><img src="images/scissor.jpg">Scissor</button>
-</div>
+    <div class="rps-text">
+        Rock Paper Scissors!!(First To 5 Wins)
     </div>
-    <div class="choice">
-        <div class="compchoice"></div>
+    <div class="rps-images">
+        <div  class="header">
+        <div class="yourimg">Your Choice</div>
+        <div class="compimg">Computer's Choice</div>
+    </div>
+        <div class="img">
+    <div class="r-images"><img class='question' src='./images/qm.png'>
+    </div>
+    <div class="vs-images"><img class='lh' src='./images/vss.jpg'></div>
+    <div class="compchoice"><img class='question' src='./images/qm.png'></div>
     </div>
 </div>
-<div class="baap">
+    <div class="buttons">
+    <div>
+    <button id="one">Rock</button>
+    </div>
+    <div>
+    <button id="two">Paper</button>
+    </div>
+     <div>
+    <button id="three">Scissor</button>
+    </div>
+    </div> 
+    <div class="score-message">
     <div class="score">
-        <div class="com">
-        <div class="compscore2">ComputerScore</div>
-        <div class="compscore"></div>
+        <div class="compscrtext">Computer Score:
+            <div class="compscore"></div>
+        </div>
+        <div class="humscrtext">Your Score:
+            <div class="humscore"></div>
+        </div>
     </div>
-    <div class="in">
-        <div class="humscore2">Humanscore</div>
-        <div class="humscore"></div>
+     <div class="message"></div>
+     <div class="playagain"></div> 
     </div>
-    </div>
-</div>
-<div class="shoe">
-<div class="bhu">
-
-</div>
 </div>
 </body>
 </html>

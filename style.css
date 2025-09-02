@@ -1,96 +1,133 @@
 body {
-    background-image: url('./images/bgi.jpg');
+    /* background-image: url('./images/bgi.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
-    background-size: cover;
-  }
-  button{
+    background-size: cover; */
+    background-color:lightgray;
     display:flex;
     flex-direction: column;
-    width:200px;
-    height:210px;
+    justify-content: center;
+    align-items: center;
   }
-  .human{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  .options{
-    display:flex;
-  }
- .choice{
-    width:300px;
-    height:200px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .compchoice{
-    font-size: large;
-    color:antiquewhite
- }
- .chu{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    height:50vh;
- }
- .score{
-    background-color:white;
-    width:300px;
-    height:100px;
-    display:flex;
-
- }
- .com{
-    background-color: violet;
-    color: white;
-    height:100px;
-    width:150px;
-    display:flex;
-    flex-direction:column;
-    /* justify-content: center; */
-    align-items:center;
- }
- /* .humscore{
-    background-color: black;
-    color: white;
-    height:40px;
- } */
- .baap{
-    display:flex;
-    justify-content: center;
- }
- .in{
-    background-color: red;
-    color: white;
-    height:100px;
-    width:150px;
-    display:flex;
-    flex-direction:column;
-    /* justify-content: center;why is it not coming in center */
-    align-items:center;
- }
-.lu{
-    display:flex;
-    justify-content: center;
-    font-size:50px;
+  .rps-text{
+   display:flex;
+   justify-content:center;
+   font-size:42px;
+   height:100px;
+   align-items:center;
 }
-.bhu{
-    background-color: blue;
-    width:300px;
-    height:200px;
-    color:pink;
-    font-size:large;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.rps-images{
+   display:flex;
+   flex-direction:column; 
+   background-color:lightgray; 
+   justify-content:center;
+   align-items:center;
+   width:1000px;
 }
-.shoe{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.r-images{
+background-color:white;
+height:300px;
+width:200px;
+margin:30px;
+border-color: blue;
 }
+.buttons{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height:200px;
+   gap: 200px;
+   width:1000px;
+}
+button{
+   padding:50px;
+   border:50px;
+}
+.lh{
+   height:300px;
+width:200px;  
+}
+.compchoice{
+  background-color:white;
+   height:300px;
+   width:200px;
+   margin:30px;
+}
+.vs-images{
+      background-color:white;
+      height:300px;
+      width:200px;
+      margin:30px;
+      }
+      .img{
+         display: flex;
+      }
+      .header{
+         display:flex;
+         width:1000px;
+         gap:200px;
+      }
+      .compimg{
+         background-color:lightgray; 
+         font-size: large;
+         margin-right:200px;
+         margin-left:250px; 
+      }
+      .yourimg{
+         background-color:lightgray; 
+         font-size: large;
+         margin-left:200px;  
+      }
+      .question{
+      height:300px;
+      width:200px;  
+      }
+      .score-message{
+         display:flex;
+         flex-direction:column;
+         width:1000px;
+         height:200px;
+         background-color:white;
+         background-color: black;
+      }
+      .score{
+         display:flex;
+         gap:200px;
+         height:100px;
+      }
+      .compscrtext{
+         margin-left:200px;
+         width:500px;
+         display:flex;
+        flex-direction: column;
+        color:white;
+        align-items:center;
+        font-size:28px;
+         
+      }
+      .humscrtext{
+         margin-right:200px;
+         width:500px;
+         color:white;
+         display:flex;
+        flex-direction: column;
+        align-items:center;
+        font-size:28px;
+      }
+      .message{
+         color:white;
+         font-size:28px;
+         height:100px;
+         display: flex;
+         justify-content: center;
+         align-items:center;
+      }
+      .playagain{
+         display:flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .new{
+         padding:20px;
+         border:20px;
+      }
